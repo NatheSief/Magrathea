@@ -1,0 +1,28 @@
+name: Build & Release Windows Binary
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Zig
+        uses: goto-bus-stop/setup-zig@v2
+        with:
+          version: master
+
+      - name: Build Windows binary
+        run: |
+          zig cc -target x86_64-windows-gnu -O ReleaseFast src/main.c src/game.c -o rpg.exe -Iinclude
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: "AutoBuild-$(date +%Y%m%d%H%M%S)"
+          tag_name: "autobuild-$(date +%s)"
+          files: rpg.exe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

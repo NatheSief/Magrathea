@@ -1,0 +1,3 @@
+[submodule "Minilibx-ZIG"]
+    path = minilibx-zig
+    url = git@github.com:pierrelgol/minilibx-zig.git

@@ -1,0 +1,54 @@
+MAGRATHEA :
+    ☐ Faire le systeme de deplacement 
+        - Avancer/reculer + saut/accroupir
+        - ?? Rajouter un systeme de rotation de camera ?? (ou decalage de layer sur la largeur + rajouter un fog)
+    ☐ Faire un systeme de classes et de statistiques
+        - Rajouter le fait que chaque classe a des statistiques differentes
+        - Rajouter le fait que chaque classe a des attaques differentes
+        - Rajouter le fait que chaque classe a des capacites differentes
+        - Faire que chaque classe est unique
+    ☐ Faire le systeme de combat
+        - Attaque de base
+        - Attaque speciale
+        - Attaque de zone
+        - Attaques de classes
+    ☐ Rajouter un GUI pour tout choisir
+        - Faire des events pour le clic du coup
+        - Faire des events pour le survol du coup
+        - Faire des events pour le clic du bouton
+        - Faire des events pour le survol du bouton
+    ☐ Faire un systeme de generation de map
+        - Bruit de perlin
+        - Generation de map en fonction du bruit de perlin
+        - Generation de dongeon/structures en fonction du biome
+    ☐ Gestion des graphiques :
+        - Optimisation sur l'affichage du jeu (ne pas tout load si pas necessaire)
+        - Creer un systeme de layers avec la minilibx-zig pour les armures/...
+        - Creer un systeme de fog pour les dongeons
+    ☐ Faire un systeme de sauvegarde
+        - Sauvegarde des statistiques
+        - Sauvegarde de la map
+        - Sauvegarde des objets
+        - Sauvegarde des quetes
+    ☐ Faire un systeme de quetes
+        - Quetes principales
+        - Quetes secondaires
+        - Quetes annexes
+        - Quetes de classes
+    ☐ Faire un systeme de craft
+        - Craft d'armes
+        - Craft d'armures
+        - Craft de potions
+        - Craft de nourriture
+    ☐ Faire un systeme de commerce
+        - Echange d'objets
+        - Echange de monnaie
+        - Echange de services
+    ☐ Gerer les PNJ
+        - IA des PNJ
+        - Dialogue des PNJ
+        - Quetes des PNJ
+        - Commerce des PNJ
+        - Reputation avec les PNJ
+    ☐ Faire un systeme de reputation
+    
